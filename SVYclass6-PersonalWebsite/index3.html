@@ -5,32 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href  = "styles.css" rel = "stylesheet">
+    <link href  = "styles3.css" rel = "stylesheet">
 </head>
 <body>
+    <header>
+        <nav>
+            <a class = bar href="index.html">Home</a>
+            <a href="index2.html"> Shows and Movies </a>
+            <a href="index3.html"> Anime and Cartoons </a>
+
+        </nav>
+
+    </header>
     <div class = "container">
-        <header>
-            <nav>
-                <a class = bar href="index.html">Home</a>
-                <a href="index2.html"> Shows and Movies </a>
-                <a href="index3.html"> Anime and Cartoons </a>
-    
-            </nav>
-    
-        </header>
+        
         <section class = "sectionA">
-            <img>
-            <p></p>
+            <label> Choose The Shows: </label>
+            <select id = "colors">
+                <option value = "FairyTale.png" select= "selected"> Fairy Tail </option>
+                <option value = "OnePiece.png"> One Piece </option>
+                <option value = "YourLie.png"> Your Lie in April</option>
+                <option value =  "TeenTitans.png"> Teen Titans </option>
+                <option value = "Rick&Morty.png"> Rick and Morty</option>
+
+            </select>
+            
+
     
         </section>
         <section class = "sectionB">
+            <img id = "current" src = "FairyTale.png">
             <img>
             <p></p>
             
         </section>
         <section class = "sectionC">
             <img>
-            <p></p>
+            <label>Genre:</label>
+            <b></b>
+            <div id = "g"> </div>
+            <label>Description: </label>
+            <p> </p>
         </section>
     
     
@@ -41,6 +56,20 @@
 
 
     <script>
+        // var descriptions["one" "two" "three"];
+         function setCar(){
+            //  var fantasy = "Fantasy";
+             
+            document.getElementById("current").src = document.getElementById("colors").value;
+            // if(document.getElementById("current") == "FairyTale.png"){
+                
+            // }
+        }
+        // document.getElementById("g") = fantasy;
+        document.getElementById("colors").addEventListener("click", setCar);
+
+
+
 
 
     </script>

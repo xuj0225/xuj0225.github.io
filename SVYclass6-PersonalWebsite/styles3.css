@@ -21,12 +21,21 @@ section{
 }
 .sectionA{
     grid-area: a;
+    width : 300px;
 }
 .sectionB{
     grid-area: b;
+    height : 400px;
+    width: 300px;
+    margin-left: -300px;
+    /* margin-right: 560px; */
 }
 .sectionC{
     grid-area: c;
+    margin-left: -300px;
+    margin-right: -200px;
+    width: 1000px;
+
 }
 footer{ 
     grid-area: footer;
